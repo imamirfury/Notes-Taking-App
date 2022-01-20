@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Notes App</string>
+    <string name="filter">Filter</string>
+    <string name="dateCreated">Date Created</string>
+    <string name="importent">Importent</string>
+    <string name="priority">Priority</string>
+    <string name="cancel">Cancel</string>
+    <string name="select">Select</string>
+    <string name="filterNotes">Filter Notes</string>
+</resources>
