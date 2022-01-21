@@ -14,9 +14,14 @@ import com.google.android.material.tabs.TabLayoutMediator
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
+import org.kodein.di.Kodein
+import org.kodein.di.KodeinAware
+import org.kodein.di.android.kodein
 import kotlin.coroutines.CoroutineContext
 
-abstract class BaseActivity<B : ViewDataBinding> : AppCompatActivity(), CoroutineScope {
+abstract class BaseActivity<B : ViewDataBinding> : AppCompatActivity(), CoroutineScope,KodeinAware {
+
+    override val kodein: Kodein by kodein()
 
     override val coroutineContext: CoroutineContext
         get() = job + Dispatchers.Main

@@ -3,41 +3,49 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <RelativeLayout
+    <data>
+        <variable
+            name="model"
+            type="com.amir.notesapp.domain.db.entity.Note" />
+    </data>
+
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/transparent_bg">
+        android:layout_height="280dp"
+        app:cardBackgroundColor="@color/cardColor"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="3dp">
 
-        <androidx.cardview.widget.CardView
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="280dp"
-            android:layout_marginHorizontal="@dimen/margin5"
-            android:layout_marginTop="@dimen/margin2"
-            android:layout_marginBottom="@dimen/margin10"
-            app:cardBackgroundColor="@color/cardColor"
-            app:cardCornerRadius="12dp"
-            app:cardElevation="3dp">
+            android:layout_height="match_parent">
 
-            <RelativeLayout
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switchButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="@{model.important}"
+                android:text="@string/important"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/margin8"/>
+
+            <TextView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <TextView
-                    android:layout_centerInParent="true"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/roboto_slab"
-                    android:gravity="start"
-                    android:letterSpacing="0.01"
-                    android:lineSpacingExtra="1.5dp"
-                    android:maxLines="5"
-                    android:paddingHorizontal="@dimen/padding30"
-                    android:paddingVertical="@dimen/padding30"
-                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
-                    android:textColor="#212121"
-                    android:textSize="@dimen/text18" />
-            </RelativeLayout>
-        </androidx.cardview.widget.CardView>
-
-    </RelativeLayout>
+                android:layout_height="match_parent"
+                android:layout_marginBottom="70dp"
+                android:layout_marginTop="30dp"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/roboto_slab"
+                android:gravity="start"
+                android:letterSpacing="0.01"
+                android:layout_below="@+id/switchButton"
+                android:lineSpacingExtra="1.5dp"
+                android:maxLines="5"
+                android:paddingHorizontal="@dimen/padding30"
+                android:paddingVertical="@dimen/padding30"
+                android:text="@{model.noteText}"
+                android:textColor="#212121"
+                android:textSize="@dimen/text18" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
 </layout>

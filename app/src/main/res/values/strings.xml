@@ -2,9 +2,15 @@
     <string name="app_name">Notes App</string>
     <string name="filter">Filter</string>
     <string name="dateCreated">Date Created</string>
-    <string name="importent">Importent</string>
+    <string name="important">Important</string>
     <string name="priority">Priority</string>
     <string name="cancel">Cancel</string>
     <string name="select">Select</string>
     <string name="filterNotes">Filter Notes</string>
+    <string name="typeHere">Type Here...</string>
+    <string name="submit">Submit</string>
+    <string name="newNote">"New Note"</string>
+    <string name="switchText">Switch</string>
+    <string name="noteCanNotBeEmpty">Note Can\'t Be Empty</string>
+    <string name="all">All</string>
 </resources>

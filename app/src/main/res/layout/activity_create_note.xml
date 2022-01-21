@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/inputCard"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_below="@id/toolbar"
+            android:layout_margin="@dimen/margin16"
+            app:cardBackgroundColor="@color/cardColor"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="4dp">
+
+            <EditText
+                android:id="@+id/input"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/transparent_bg"
+                android:gravity="start"
+                android:inputType="textCapWords|textMultiLine"
+                android:hint="@string/typeHere"
+                android:padding="@dimen/padding16"
+                android:textColor="#212121"
+                android:textColorHint="#919191"
+                android:textSize="@dimen/text16" />
+        </androidx.cardview.widget.CardView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/submitButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/inputCard"
+            android:layout_marginHorizontal="@dimen/margin16"
+            android:text="@string/submit" />
+
+    </RelativeLayout>
+
+</layout>
