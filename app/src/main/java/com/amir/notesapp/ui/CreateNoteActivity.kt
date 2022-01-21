@@ -15,6 +15,13 @@ import com.furybase.extension.showSoftInput
 import com.furybase.extension.string
 import org.kodein.di.generic.instance
 
+/**
+ * Created by Amir Fury on January 21 2022
+ *
+ * Email : fury.amir93@gmail.com
+ *
+ */
+
 class CreateNoteActivity : BaseActivity<ActivityCreateNoteBinding>() {
 
     private val viewModel by instance<NotesViewModel>()

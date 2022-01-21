@@ -13,6 +13,14 @@ import org.kodein.di.generic.bind
 import org.kodein.di.generic.instance
 import org.kodein.di.generic.singleton
 
+
+/**
+ * Created by Amir Fury on January 21 2022
+ *
+ * Email : fury.amir93@gmail.com
+ *
+ */
+
 class NotesApp : Application(), KodeinAware {
 
     override val kodein: Kodein = Kodein.lazy {

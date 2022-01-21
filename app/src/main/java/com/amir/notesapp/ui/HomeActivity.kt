@@ -23,6 +23,13 @@ import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import kotlinx.coroutines.launch
 import org.kodein.di.generic.instance
 
+/**
+ * Created by Amir Fury on January 21 2022
+ *
+ * Email : fury.amir93@gmail.com
+ *
+ */
+
 class HomeActivity : BaseActivity<ActivityHomeBinding>(), ItemClickListener {
 
 

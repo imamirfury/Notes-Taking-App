@@ -8,6 +8,13 @@ import android.view.View
 import androidx.fragment.app.FragmentActivity
 import androidx.recyclerview.widget.RecyclerView
 
+/**
+ * Created by Amir Fury on January 21 2022
+ *
+ * Email : fury.amir93@gmail.com
+ *
+ */
+
 fun FragmentActivity.launchActivity(intent: Intent) {
     startActivity(intent)
 }

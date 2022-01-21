@@ -7,6 +7,13 @@ import com.amir.notesapp.domain.db.entity.Note
 import com.amir.notesapp.listener.ItemClickListener
 import com.furybase.base.FuryBaseListAdapter
 
+/**
+ * Created by Amir Fury on January 21 2022
+ *
+ * Email : fury.amir93@gmail.com
+ *
+ */
+
 class NotesAdapter(private val listener: ItemClickListener) :
     FuryBaseListAdapter<Note>(notesDiffCallback) {
 

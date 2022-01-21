@@ -7,6 +7,13 @@ import com.amir.notesapp.utils.Constants
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 
+/**
+ * Created by Amir Fury on January 21 2022
+ *
+ * Email : fury.amir93@gmail.com
+ *
+ */
+
 class RepositoryImpl(private val dao: NotesDao) : Repository {
     override suspend fun insert(note: Note) {
         withContext(Dispatchers.IO) {

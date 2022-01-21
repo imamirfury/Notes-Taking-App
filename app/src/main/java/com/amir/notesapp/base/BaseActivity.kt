@@ -19,6 +19,13 @@ import org.kodein.di.KodeinAware
 import org.kodein.di.android.kodein
 import kotlin.coroutines.CoroutineContext
 
+/**
+ * Created by Amir Fury on January 21 2022
+ *
+ * Email : fury.amir93@gmail.com
+ *
+ */
+
 abstract class BaseActivity<B : ViewDataBinding> : AppCompatActivity(), CoroutineScope,KodeinAware {
 
     override val kodein: Kodein by kodein()
